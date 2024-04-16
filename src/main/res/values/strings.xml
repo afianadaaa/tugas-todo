@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">TodoList</string>
+    <dimen name="dimen_16_margin">16dp</dimen>
+</resources>

@@ -1,0 +1,67 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".TodoListActivity">
+
+    <EditText
+        android:id="@+id/edit_text_task"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:hint="Add your task here"
+        android:padding="8dp"
+        android:textColor="@color/black"
+        android:backgroundTint="#FFBE98"
+        android:background="@drawable/bg_inputtask"
+        android:drawablePadding="8dp"
+        app:layout_constraintEnd_toStartOf="@id/add_button_task"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <EditText
+        android:id="@+id/edit_time_task"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="-200dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:hint="time"
+        android:padding="8dp"
+        android:textColor="@color/black"
+        android:backgroundTint="#FFBE98"
+        android:background="@drawable/bg_inputtask"
+        android:drawablePadding="8dp"
+        app:layout_constraintEnd_toStartOf="@id/add_button_task"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/edit_text_task"/>
+
+    <ImageView
+        android:id="@+id/add_button_task"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="110dp"
+        android:src="@drawable/ic_add"
+        app:layout_constraintBottom_toBottomOf="@id/edit_text_task"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/edit_text_task"
+        app:layout_constraintTop_toTopOf="@id/edit_text_task" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_marginTop="0dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:padding="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edit_text_task"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:listitem="@layout/list_item_todo" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

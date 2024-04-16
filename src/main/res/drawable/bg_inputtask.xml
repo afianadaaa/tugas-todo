@@ -1,0 +1,10 @@
+<!-- res/drawable/edit_text_background.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <solid android:color="#FFBE98" /> <!-- Warna isi bingkai kotak -->
+    <stroke
+        android:width="10dp"
+    android:color="#FFFFFF" /> <!-- Warna bingkai kotak -->
+    <corners
+        android:radius="8dp" /> <!-- Sudut bingkai kotak -->
+</shape>
